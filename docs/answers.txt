@@ -1,0 +1,71 @@
+(a)
+Counting objects: 7, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 858 bytes | 429.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/nickkin212/Assignment1.git
+   fbdbe93..cd92449  master -> master
+
+(b)
+A total of 9 commits have been done to the repository at this point. The git
+command used to get this information is as follows:
+$ git rev-list --all --count
+
+(c)
+The file .gitignore was last modified Wed Sep 27 2017 at 16:31:42. This 
+information was retrieved using the following command in the Assignment 1
+directory of the repository:
+$ git log .gitignore
+
+(d)
+The IDs of the commits used to merge the changes from the branch development
+to the branch master are as follows:
+commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+
+(e)
+One reason for using a branch in a Git repository is to provide an environment 
+for a developer to make changes to code and verify those changes work before 
+they are delivered to another developer. Another reason for using a branch 
+is to allow modularization of development, meaning developers can work on 
+different features of a software system simultaneously.
+
+(f)
+The command "git log" provides information about the latest commits to the 
+repository, while the command "git status" provides information on the current 
+working branch of the project tree. The command "git status" displays 
+changes made in the working branch that differ from the main branch, while 
+"git log" displays information on the commits from both the main and working 
+branches.
+
+(g)
+The command you would use to see the commits where "Weapon.h" was one of the 
+committed files would be as follows:
+$ git log --full-history Weapon.h
+
+(h)
+The command you would use to see the commits whose commit message contains the
+word "file" would be as follows:
+$ git log --grep="file"
+
+(i)
+(I)
+Inheritance, in object oriented programming, is the property of a class to be 
+able to take on the properties of a parent class while having properties 
+that are specific to its class. The parent class essentially forms a base 
+for other classes. For example, a dog is a mammal but not all mammal's are 
+necessarily a dog. The dog could be the sub class, inheriting properties of the 
+base class and the base class can be the parent of several sub classes.
+(II)
+Polymorphism, in object oriented programming, is the ability to provide similar 
+functionality for objects differing in class or datatype. Polymorphism allows 
+several different types of objects or classes to be used in a given situation, 
+such as allowing differnt classes of objects to be passed into a function.
+(III)
+Encapsulation, in object oriented programming, is the idea of combining data 
+and functions into a single object to be used throughout a program or 
+programs. The template of this object is often called a class. Encapsulation 
+allows the designer to restrict access to certain data and functions of the 
+class and helps define how that object is to be used. 
