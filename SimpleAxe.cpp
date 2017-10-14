@@ -9,7 +9,7 @@
 
 double SimpleAxe::hit(double armor){
     double damage = hitPoints;
-    if(armor >= 0.0 && armor <= 20.0)
+    if(armor >= 0.0 && armor < 20.0)
     {
 	    return damage;
     }
