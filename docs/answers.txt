@@ -65,7 +65,17 @@ several different types of objects or classes to be used in a given situation,
 such as allowing differnt classes of objects to be passed into a function.
 (III)
 Encapsulation, in object oriented programming, is the idea of combining data 
-and functions into a single object to be used throughout a program or 
-programs. The template of this object is often called a class. Encapsulation 
-allows the designer to restrict access to certain data and functions of the 
-class and helps define how that object is to be used. 
+and functions into a single entity to be used throughout a program or 
+programs. Encapsulation allows the designer to restrict access to certain data 
+and functions and those functions use and manipulate stored data in order to define
+how the entity is to be used and to help further describe the entity. 
+
+Section 7 Question;
+The RoleGame prototype is using polymorphism and encapsulation. The prototype is
+using polymorphism by allowing several different classes, like the SimpleAxe and
+CommonSpear, to be used in a similar manner despite differences in each class. 
+The prototype uses encapsulation since the weapon class stores both data and
+functions that define it and those functions help class objects manipulate and 
+use their own data. For example, the Weapon class stores a value called hitPoints. 
+This value is then used to determine damage output in both the weapon class and 
+in the distinct underlying class.
