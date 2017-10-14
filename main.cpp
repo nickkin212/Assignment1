@@ -10,6 +10,8 @@
 #include <iostream>
 #include "Weapon.h"
 #include "WeaponFactory.h"
+#include <time.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -31,11 +33,20 @@ int main(int argc, char** argv) {
 
     double armor = 20;
 
+    srand(time(NULL));
     Weapon *weapon = WeaponFactory::getInstance()->getWeapon("sword");
     simulateWeapon(weapon, armor);
     delete(weapon);
 
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("axe");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("random");
     simulateWeapon(weapon, armor);
     delete(weapon);
 
